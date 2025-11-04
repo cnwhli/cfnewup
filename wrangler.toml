@@ -1,8 +1,5 @@
-name = "cfnew-worker"
-main = "worker.js"
-
-# Cloudflare Workers 兼容日期
-compatibility_date = "2025-11-01"
-
-# 兼容性标志（启用最新的 Workers 功能）
-compatibility_flags = ["nodejs_compat"]
+name = "wk-auto-update"
+main = "_worker.js"
+compatibility_date = "2025-11-02"
+usage_model = "bundled"
+workers_dev = true
