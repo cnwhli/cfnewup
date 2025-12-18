@@ -1,5 +1,5 @@
 # 项目名称（自定义，建议和游戏名称一致）
-name = "cfnewup"
+name = "lnnjoy"
 
 # Workers 入口文件路径（确保和实际文件名一致）
 main = "_worker.js"
