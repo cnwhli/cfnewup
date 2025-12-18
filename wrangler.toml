@@ -1,5 +1,5 @@
 name = "cfnewup"
-main = "_workers.js"
+main = "_worker.js"
 compatibility_date = "2023-10-01"
 compatibility_flags = ["streams_enable_constructors"]
 
