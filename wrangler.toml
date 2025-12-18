@@ -5,4 +5,4 @@ compatibility_date = "2023-10-01"
 # 环境变量配置
 [vars]
 # 管理员密码（生产环境建议通过Cloudflare控制台设置，此处仅为示例）
-U= "n"
+U = "n"
