@@ -1,7 +1,6 @@
 name = "cfnewup"
 main = "_worker.js"
 compatibility_date = "2023-10-01"
-compatibility_flags = ["streams_enable_constructors"]
 
 [[kv_namespaces]]
 binding = "IP_STORAGE"
