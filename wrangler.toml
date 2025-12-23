@@ -1,15 +1,50 @@
-# 项目名称（自定义，建议和游戏名称一致）
 name = "cfnewup"
-
-# Workers 入口文件路径（确保和实际文件名一致）
 main = "_worker.js"
+compatibility_date = "2024-04-28"
+# 环境变量
+[vars]
+u = "4b99ce68-3bce-4ccf-9ab4-d2e2b070a7f3"
+#u	你的 UUID	必需。用于访问订阅和配置管理界面
+#s = "user:pass@host:port 或 host:port"
+#s	你的SOCKS5地址	可选。用于将所有出站流量通过 SOCKS5 代理转发，格式为 user:pass@host:port 或 host:port
+d = "n"
+#d	自定义路径	可选。自定义订阅访问路径，支持多级路径，如 /mypath 或 /path/to/sub，不填则使用 UUID 路径。如果路径没有以 / 开头，会自动补上
+p = "us.cmliussss.net"
+#p	proxyip	可选。自定义ProxyIP地址和端口
+wk = "us"
+#wk	地区代码	可选。手动指定Worker地区，如：SG、HK、US、JP等
+ev = "yes"
+##ev	yes/no	可选。启用VLESS协议（默认启用
+et = "yes"
+##et	yes/no	可选。启用Trojan协议（
+ex = "yes" 
+##ex	yes/no	可选。启用xhttp协议（默认禁用
+#tp = "n" 
+##tp	自定义密码	可选。Trojan协议密码，留空则使用UUI
+#yx#yx = "yes" 
+##yx	自定义优选IP/域名	可选。支持节点命名，格式：1.1.1.1:#香港节点,8.8.8.8:53#Google DN
+yxURL = "https://raw.githubusercontent.com/cnwhli/server/refs/heads/main/yx.txt" 
+##yxURL	优选IP来源URL	可选。自定义优选IP列表来源URL，留空则使用默认地
+scu = "MC_pNH17DNPJSEY4"
+##scu	订阅转换地址	可选。自定义订阅转换服务URL，默认：https://url.v1.mk/su
+epd = "yes"
+##epd	yes/no	可选。启用优选域名（默认启
+epi = "yes"
+##epi	yes/no	可选。启用优选IP（默认启用
+egi = "yes"
+##egi	yes/no	可选。启用GitHub默认优选（默认启用
+#qj = "no" 
+##qj	no	可选。降级控制，设置为no时启用降级模式：CF直连失败→SOCKS5连接→fallback地
+dkby = "yes"
+##dkby	yes	可选。TLS控制，设置为yes时只生成TLS节点，不生成非TLS节点（如80端口
+#yxby = "yes"
+##yxby	yes	可选。优选控制，设置为yes时关闭所有优选功能，只使用原生地址，不生成优选IP和域名节
+rm = "yes"
+##rm	no	可选。地区匹配控制，设置为no时关闭地区智能匹
+ae = "yes" 
+##ae	yes	可选。API管理开关，设置为yes时允许通过API动态管理优选IP（默认关
 
-# 兼容性日期（使用最新日期或稳定版本日期）
-compatibility_date = "2025-12-18"
-
-# 开发环境配置（本地调试用）
-[dev]
-# 本地运行端口
-#port = 8787
-# 自动重载代码
-#autoreload = true
+# KV 命名空间绑定
+[[kv_namespaces]]
+binding = "kv"
+id = "3f9652d600a8477eb0baf25f18731e66"
