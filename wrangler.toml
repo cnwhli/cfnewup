@@ -27,7 +27,7 @@ ex = "yes"
 # 可选：优选IP来源URL，自定义优选IP列表来源URL，留空则使用默认地址
 yxURL = "https://raw.githubusercontent.com/cnwhli/server/refs/heads/main/yx.txt"
 # 可选：自定义订阅转换服务URL，默认：https://url.v1.mk/su
-scu = "MC_pNH17DNPJSEY4"
+scu = "yes"
 # 可选：启用优选域名（默认启用）
 epd = "yes"
 # 可选：启用优选IP（默认启用）
