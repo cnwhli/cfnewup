@@ -3,7 +3,7 @@ main = "_worker.js"
 compatibility_date = "2024-04-28"
 # 环境变量
 [vars]
-u = "4b99ce68-3bce-4ccf-9ab4-d2e2b070a7f3"
+u = "e28a586e-0708-4a43-808d-11ce9788de97"
 #u	你的 UUID	必需。用于访问订阅和配置管理界面
 #s = "user:pass@host:port 或 host:port"
 #s	你的SOCKS5地址	可选。用于将所有出站流量通过 SOCKS5 代理转发，格式为 user:pass@host:port 或 host:port
