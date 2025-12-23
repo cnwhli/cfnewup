@@ -1,48 +1,49 @@
 name = "cfnewup"
 main = "_worker.js"
 compatibility_date = "2024-04-28"
+
 # 环境变量
 [vars]
+# 必需：UUID，用于访问订阅和配置管理界面
 u = "e28a586e-0708-4a43-808d-11ce9788de97"
-#u	你的 UUID	必需。用于访问订阅和配置管理界面
-#s = "user:pass@host:port 或 host:port"
-#s	你的SOCKS5地址	可选。用于将所有出站流量通过 SOCKS5 代理转发，格式为 user:pass@host:port 或 host:port
+# 可选：SOCKS5地址，格式为 user:pass@host:port 或 host:port
+# s = "user:pass@host:port 或 host:port"
+# 可选：自定义路径，支持多级路径，如 /mypath 或 /path/to/sub，不填则使用 UUID 路径
 d = "n"
-#d	自定义路径	可选。自定义订阅访问路径，支持多级路径，如 /mypath 或 /path/to/sub，不填则使用 UUID 路径。如果路径没有以 / 开头，会自动补上
+# 可选：自定义ProxyIP地址和端口
 p = "us.cmliussss.net"
-#p	proxyip	可选。自定义ProxyIP地址和端口
+# 可选：手动指定Worker地区，如：SG、HK、US、JP等
 wk = "us"
-#wk	地区代码	可选。手动指定Worker地区，如：SG、HK、US、JP等
+# 可选：启用VLESS协议（默认启用）
 ev = "yes"
-##ev	yes/no	可选。启用VLESS协议（默认启用
+# 可选：启用Trojan协议（默认启用）
 et = "yes"
-##et	yes/no	可选。启用Trojan协议（
-ex = "yes" 
-##ex	yes/no	可选。启用xhttp协议（默认禁用
-#tp = "n" 
-##tp	自定义密码	可选。Trojan协议密码，留空则使用UUI
-#yx#yx = "yes" 
-##yx	自定义优选IP/域名	可选。支持节点命名，格式：1.1.1.1:#香港节点,8.8.8.8:53#Google DN
-yxURL = "https://raw.githubusercontent.com/cnwhli/server/refs/heads/main/yx.txt" 
-##yxURL	优选IP来源URL	可选。自定义优选IP列表来源URL，留空则使用默认地
+# 可选：启用xhttp协议（默认禁用）
+ex = "yes"
+# 可选：Trojan协议密码，留空则使用UUID
+# tp = "n"
+# 可选：自定义优选IP/域名，支持节点命名，格式：1.1.1.1:#香港节点,8.8.8.8:53#Google DN
+# yx = "yes"
+# 可选：优选IP来源URL，自定义优选IP列表来源URL，留空则使用默认地址
+yxURL = "https://raw.githubusercontent.com/cnwhli/server/refs/heads/main/yx.txt"
+# 可选：自定义订阅转换服务URL，默认：https://url.v1.mk/su
 scu = "MC_pNH17DNPJSEY4"
-##scu	订阅转换地址	可选。自定义订阅转换服务URL，默认：https://url.v1.mk/su
+# 可选：启用优选域名（默认启用）
 epd = "yes"
-##epd	yes/no	可选。启用优选域名（默认启
+# 可选：启用优选IP（默认启用）
 epi = "yes"
-##epi	yes/no	可选。启用优选IP（默认启用
+# 可选：启用GitHub默认优选（默认启用）
 egi = "yes"
-##egi	yes/no	可选。启用GitHub默认优选（默认启用
-#qj = "no" 
-##qj	no	可选。降级控制，设置为no时启用降级模式：CF直连失败→SOCKS5连接→fallback地
+# 可选：降级控制，设置为no时启用降级模式：CF直连失败→SOCKS5连接→fallback地址
+# qj = "no"
+# 可选：TLS控制，设置为yes时只生成TLS节点，不生成非TLS节点（如80端口）
 dkby = "yes"
-##dkby	yes	可选。TLS控制，设置为yes时只生成TLS节点，不生成非TLS节点（如80端口
-#yxby = "yes"
-##yxby	yes	可选。优选控制，设置为yes时关闭所有优选功能，只使用原生地址，不生成优选IP和域名节
+# 可选：优选控制，设置为yes时关闭所有优选功能，只使用原生地址，不生成优选IP和域名节点
+# yxby = "yes"
+# 可选：地区匹配控制，设置为no时关闭地区智能匹配
 rm = "yes"
-##rm	no	可选。地区匹配控制，设置为no时关闭地区智能匹
-ae = "yes" 
-##ae	yes	可选。API管理开关，设置为yes时允许通过API动态管理优选IP（默认关
+# 可选：API管理开关，设置为yes时允许通过API动态管理优选IP（默认关闭）
+ae = "yes"
 
 # KV 命名空间绑定
 [[kv_namespaces]]
